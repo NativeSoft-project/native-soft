@@ -1,0 +1,47 @@
+.banner {
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    justify-content: space-between;
+    background: url(/img/background/Banner.jpg) center center/cover no-repeat;
+    margin-bottom: 88px;
+    padding: 32px;
+    &__h2 {
+        color: white;
+    }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 248px;
+  }
+
+  &__image {
+    display: flex;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: $white;
+  }
+
+  &__button {
+    width: 155px;
+    height: 54px;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  &__button a {
+    background: $blue-4 !important;
+  }
+
+  &__button:hover a {
+    background: $blue-9 !important;
+  }
+
+  &__button:active a {
+    background: $blue-4 !important;
+  }
+}

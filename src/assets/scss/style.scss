@@ -1,0 +1,42 @@
+@import 'data/fonts.scss',
+'data/colors.scss',
+'data/typography.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex', sans-serif;
+    font-style: normal;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+@import 'data/proto.scss',
+'data/buttons.scss',
+'data/self-promotion-block.scss',
+'data/category.scss',
+'data/reviews.scss',
+'data/header.scss',
+'data/footer.scss',
+'data/banner.scss',
+'data/main.scss',
+'data/background.scss';
+
+// Other pages
+@import 'data/company.scss',
+'data/product.scss',
+'data/about.scss',
+'data/btncategory',
+'data/catalog.scss',
+'data/integrators.scss';
+
+// media
+@import 'data/media.scss';

@@ -1,0 +1,133 @@
+$lg-btn-border-radius: 12px;
+$btn-border-radius: 8px;
+$sm-btn-border-radius: 6px;
+
+$lg-btn-padding: 14px 20px;
+$lg-btn-gap: 8px;
+$btn-padding: 10px 16px;
+$btn-gap: 9px;
+$sm-btn-padding: 8px 12px;
+$sm-btn-gap: 6px;
+
+$border-size: 2px;
+
+.btn {
+    box-sizing: border-box;
+    /* Auto layout */
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    /* Text layout */
+    text-align: center;
+    text-decoration: none;
+
+    /* Default params */
+    color: black; // text colour
+    background: none;
+    padding: $btn-padding;
+    gap: $btn-gap;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: $btn-border-radius;
+    border: 0;
+}
+
+.btn-lg {
+    padding: $lg-btn-padding;
+    gap: $lg-btn-gap;
+
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: $lg-btn-border-radius;
+}
+
+.btn-sm {
+    padding: $sm-btn-padding;
+    gap: $sm-btn-gap;
+
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: $sm-btn-border-radius;
+}
+
+.btn-primary {
+    border: $border-size solid $blue-4;
+    background: $blue-4;
+    color: $white !important;
+}
+
+.btn-primary:hover {
+    border: $border-size solid $blue-9;
+    background: $blue-9;
+    color: $white !important;
+}
+
+.btn-primary:active {
+    border: $border-size solid $blue-4;
+    background: $blue-4;
+    color: $white !important;
+}
+
+.btn-secondary{
+    border: $border-size solid $gray-5;
+    background: $white;
+    color: $black !important;
+}
+
+.btn-secondary:hover {
+    border: $border-size solid $gray-4;
+    background: $gray-4;
+    color: $white !important;
+}
+
+.btn-secondary:active {
+    border: $border-size solid $gray-5;
+    background: $white;
+    color: $black !important;
+}
+
+.btn-outline-primary {
+    border: $border-size solid $blue-4;
+    color: $black !important;
+}
+
+.btn-outline-primary:hover {
+    border: $border-size solid $blue-9;
+    color: $black !important;
+}
+
+.btn-outline-primary:active {
+    border: $border-size solid $blue-4;
+    color: $black !important;
+}
+
+.btn-light-primary{
+    background: $blue-2;
+    color: $white !important;
+    cursor: pointer;
+}
+
+.btn-light-primary:hover{
+    background: $blue-10;
+}
+
+.btn-light-primary:active{
+    background: $blue-9;
+}
+
+
+.btn:hover {
+    color: $gray-3;
+}
+
+.btn:active {
+    color: $gray-2;
+}
+
+.btn-icon-left-margin {
+    flex-direction: row-reverse !important;
+}
